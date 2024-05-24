@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: appuser
+      password: appuserpass
+      port: 27017
+      host: localhost
+      database: appDb
+      auto-index-creation: true

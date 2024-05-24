@@ -1,0 +1,12 @@
+INSERT INTO student(id, name) values (1, 'mehdi');
+INSERT INTO student(id, name) values (2, 'reza');
+INSERT INTO student(id, name) values (3, 'ali');
+INSERT INTO student(id, name) values (4, 'bahador');
+INSERT INTO course(id, name) values (1, 'math');
+INSERT INTO course(id, name) values (2, 'novel');
+INSERT INTO course(id, name) values (3, 'history');
+INSERT INTO course(id, name) values (4, 'physics');
+INSERT INTO course_student values (1, 1);
+INSERT INTO course_student values (1, 2);
+INSERT INTO course_student values (1, 4);
+INSERT INTO course_student values (2, 2);

@@ -1,0 +1,26 @@
+server:
+  port: 9191
+spring:
+  datasource-oracle:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: test
+    password: test
+    jdbc-url: jdbc:oracle:thin:@localhost:17521:IR
+    hikari:
+      idle-timeout: 10000
+      maximum-pool-size: 10
+      minimum-idle: 5
+      pool-name: OracleHikariPool
+  datasource-hprt:
+      driver-class-name: org.postgresql.Driver
+      username: admin
+      password: admin
+      jdbc-url: jdbc:postgresql://localhost:5432/postgres
+      hikari:
+        idle-timeout: 10000
+        maximum-pool-size: 10
+        minimum-idle: 5
+        pool-name: PostgresHikariPool
+  jpa:
+    database: default
+
