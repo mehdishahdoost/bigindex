@@ -10,3 +10,10 @@ brew link --force libpq
 ```
 PGPASSWORD=pw psql -U user -h localhost -p 5432
 ```
+
+### Fill database with a sql file
+
+```
+cat bootstrap.sql | PGPASSWORD=pw pgsql -U user -h localhost -p 5432 user
+```
+* Last "user" is schema name
